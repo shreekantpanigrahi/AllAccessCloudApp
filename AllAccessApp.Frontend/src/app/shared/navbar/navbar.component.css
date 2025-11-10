@@ -1,0 +1,42 @@
+.navbar-brand, .nav-link {
+  font-family: 'Google Sans', 'Segoe UI', sans-serif;
+  letter-spacing: -0.1px;
+}
+
+.nav-link {
+  color: #5f6368 !important;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: #1a73e8 !important;
+  text-decoration: underline;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Remove default button outline */
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.nav-link.fw-bold {
+  color: #1a73e8 !important;
+  position: relative;
+}
+
+.nav-link.fw-bold::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 25px;
+  height: 4px;
+  background: #1a73e8;
+  border-radius: 50%;
+}

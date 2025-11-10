@@ -1,0 +1,94 @@
+.dashboard-container {
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4edf5 100%);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.hero-section {
+  background: white;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.hi-text {
+  color: #1a1a1a;
+  line-height: 1.2;
+}
+
+.tagline {
+  color: #495057;
+  font-weight: 500;
+}
+
+.features-section h2 {
+  color: #333;
+  font-weight: 600;
+}
+
+.hi-text .btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  transition: all 0.2s ease;
+}
+
+.hi-text .btn-primary:hover {
+  background-color: #0b5ed7;
+  border-color: #0a58da;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+}
+
+.features-section .btn-outline-primary {
+  border-color: #0d6efd;
+  color: #0d6efd;
+}
+
+.features-section .btn-outline-primary:hover {
+  background: #0d6efd;
+  color: white;
+}
+
+.upload-btn {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.4);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.upload-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(0, 123, 255, 0.6);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-section .col-md-6 {
+    text-align: center;
+  }
+
+  .hero-section img {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .features-section .row {
+    flex-direction: column-reverse;
+  }
+
+  .features-section .col-md-6 {
+    text-align: center;
+  }
+
+  .upload-btn {
+    width: 55px;
+    height: 55px;
+    bottom: 20px;
+    right: 20px;
+  }
+}

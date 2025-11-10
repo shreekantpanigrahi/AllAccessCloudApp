@@ -1,0 +1,39 @@
+<div class="auth-form">
+    <div class="card shadow-lg border-0 rounded-4 p-4">
+        <div class="card-body">
+            <h3 class="text-center mb-4 text-primary">Login</h3>
+
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control form-control-lg" id="email" formControlName="email" placeholder="Enter your email">
+                    <div *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched" class="text-danger">Email is required and must be valid</div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <div class="input-group">
+                        <input [type]="hidePassword ? 'password': 'text'" class="form-control form-control-lg" id="password" formControlName="password" placeholder="Enter your password">
+                        <button type="button" class="btn btn-outline-secondary" (click)="togglePassword()" tabindex="-1"aria-label="Show password">
+                            <i class="bi" [class.bi-eye-slash]="hidePassword" [class.bi-eye]="!hidePassword"></i>
+                        </button>
+                    </div>
+                    <div *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched" class="text-danger">Password is required and must be valid</div>
+                </div>
+
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary btn-lg" [disabled]="loginForm.invalid || loading">
+                        <span *ngIf="loading" class="spinner-border spinner-border-sm me-2"></span>
+                        {{loading ? 'Logging in...' : 'Login'}}
+                    </button>
+                </div>
+            </form>
+
+            <div class="text-center mt-3">
+                <small>Don't have an account? <a routerLink="/auth/register" class="text-decoration-none">Register here</a></small>
+                <br>
+                <small><a routerLink="/auth/forgot-password" class="text-decoration-none">Forgot password?</a></small>
+            </div>
+        </div>
+    </div>
+</div> 

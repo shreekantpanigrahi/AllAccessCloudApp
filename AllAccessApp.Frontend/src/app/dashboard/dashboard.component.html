@@ -1,0 +1,125 @@
+<div class="dashboard-container">
+  <!-- Hero Section -->
+  <section class="hero-section d-flex align-items-center py-5">
+    <div class="container py-5">
+    <div class="row align-items-center g-4">
+      <!-- Text Column (Left) -->
+      <div class="col-md-6">
+        <h1 class="hi-text display-3 fw-bold text-dark">Hi {{ userName }},</h1>
+
+        <!-- Main Tagline -->
+        <p class="tagline lead mt-3 fw-normal" style="font-size: 1.8rem; color: #495057;">
+          Store, Share & Secure Your Digital Life
+        </p>
+
+        <!-- Secondary Tagline -->
+        <p class="mt-2 mb-4" style="font-size: 1.1rem; color: #6c757d; line-height: 1.6;">
+          Upload photos, documents, videos — all in one place. Access from anywhere, anytime.
+        </p>
+
+        <!-- Tertiary Tagline (smaller, italic) -->
+        <p class="text-muted small mb-4" style="font-style: italic;">
+          📁 No more lost files. No more USB drives. Just cloud, simple.
+        </p>
+
+        <!-- Upload Button -->
+        <button 
+          class="btn btn-primary btn-lg px-4 py-3 shadow-sm"
+          (click)="handleUploadClick()" 
+          [disabled]="loading">
+          <span *ngIf="loading" class="spinner-border spinner-border-sm me-2"></span>
+          {{ loading ? 'Uploading...' : 'Upload File' }}
+        </button>
+
+        <!-- Success Message -->
+        <div *ngIf="uploadSuccess" class="alert alert-success mt-3 small fade show d-flex align-items-center" style="font-size: 0.9rem; border-radius: 8px;">
+          <i class="bi bi-check-circle-fill me-2"></i>
+          File uploaded successfully!
+        </div>
+
+        <!-- Error Message -->
+        <div *ngIf="uploadError" class="alert alert-danger mt-3 small fade show d-flex align-items-center" style="font-size: 0.9rem; border-radius: 8px;">
+          <i class="bi bi-exclamation-triangle-fill me-2"></i>
+          {{ uploadError }}
+        </div>
+      </div>
+
+      <!-- Image Column (Right) -->
+      <div class="col-md-6 text-center">
+        <div class="position-relative"> 
+          <!-- Main Image -->
+          <img src="assets/icons/dashboard.jpg" 
+              alt="Cloud Storage Illustration"
+              class="img-fluid rounded-4 shadow-sm" 
+              width="400" height="400"/>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features-section py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Why Choose AllAccessApp?</h2>
+
+      <!-- Feature 1 -->
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6 order-md-2 mb-4 mb-md-0">
+          <h3>Secure & Private</h3>
+          <p>Your files are encrypted and stored safely in the cloud. Only you can access them.</p>
+          <a href="#" class="btn btn-outline-primary">Learn More</a>
+        </div>
+        <div class="col-md-6 order-md-1 d-flex justify-content-center">
+          <img src="assets/icons/security.png" 
+               alt="Security"
+               class="img-fluid rounded shadow" width="200" height="200"/>
+        </div>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <h3>View Anywhere</h3>
+          <p>Preview documents, images, and videos directly in your browser — no downloads needed.</p>
+          <a href="#" class="btn btn-outline-primary">Learn More</a>
+        </div>
+        <div class="col-md-6 d-flex justify-content-center"> 
+          <img src="assets/icons/view.png" 
+               alt="Preview"
+               class="img-fluid rounded shadow" width="200" height="200"/>
+        </div>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="row align-items-center">
+        <div class="col-md-6 order-md-2 mb-4 mb-md-0">
+          <h3>Smart Compression</h3>
+          <p>Large files? We compress them automatically to save space — without losing quality.</p>
+          <a href="#" class="btn btn-outline-primary">Learn More</a>
+        </div>
+        <div class="col-md-6 order-md-1 d-flex justify-content-center">
+          <img src="assets/icons/compression.png" 
+               alt="Compression"
+               class="img-fluid rounded shadow" width="200" height="200"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating Upload Button -->
+  <button
+    class="btn btn-primary upload-btn rounded-circle shadow-lg d-flex align-items-center justify-content-center"
+    (click)="handleUploadClick()"  [disabled]="loading"
+    title="Upload a file">
+    <img src="assets/icons/file.png" alt="Upload" width="28" height="28" />
+  </button>
+
+  <!-- Hidden File Input -->
+  <input
+    type="file"
+    #fileInput
+    (change)="onFileSelected($event)"
+    style="display: none;"
+    accept="*" />
+</div>

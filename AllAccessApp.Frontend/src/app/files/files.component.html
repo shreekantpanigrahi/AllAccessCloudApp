@@ -1,0 +1,81 @@
+<div class="files-container py-4">
+  <div class="container">
+    <!-- Page Header -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h2 class="text-dark">My Files</h2>
+      <span class="badge bg-secondary">{{ totalFiles }} files</span>
+    </div>
+
+    <!-- Loading State -->
+    <div *ngIf="loading" class="text-center py-5">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <p class="mt-3">Loading your files...</p>
+    </div>
+
+    <!-- Empty State -->
+    <div *ngIf="!loading && files.length === 0" class="text-center py-5 text-muted">
+      <img src="assets/icons/MyFilesIcon/no-documents.png" alt="No files" class="mb-3" style="width:80px;">
+      <h5>No files uploaded yet</h5>
+      <p>Upload your first file from the Dashboard.</p>
+    </div>
+
+    <!-- Files List -->
+    <div *ngIf="!loading && files.length > 0" class="file-list">
+      <div class="row g-3">
+        <div class="col-12" *ngFor="let file of files">
+          <div class="card shadow-sm border h-100 d-flex flex-row align-items-center p-3">
+
+            <!-- File Icon -->
+            <div class="file-icon me-3">
+              <img [src]="getFileIcon(file.fileType)" [alt]="file.fileType" width="40" height="40">
+            </div>
+
+            <!-- File Info -->
+            <div class="file-info flex-grow-1">
+              <h6 class="mb-0 fw-normal">{{ file.originalName }}</h6>
+              <small class="text-muted">
+                {{ file.formattedSize }} • {{ formatDateTime(file.createdOn) }}
+                <span *ngIf="file.isCompressed" class="badge bg-danger ms-2">Compressed</span>
+              </small>
+            </div>
+
+            <!-- Actions -->
+            <div class="actions btn-group" role="group">
+              <!-- View Button -->
+              <button class="btn btn-outline-primary" (click)="viewFile(file.id)">
+                 <img src="assets/icons/MyFilesIcon/view.png" width="20" height="20">
+              </button>
+
+              <!-- Download Button -->
+              <button class="btn btn-outline-success" (click)="downloadFile(file.id)">
+                 <img src="assets/icons/MyFilesIcon/download.png" width="20" height="20">
+              </button>
+
+              <!-- Delete Button -->
+              <button class="btn btn-outline-danger" (click)="deleteFile(file.id)">
+                <img src="assets/icons/MyFilesIcon/delete.png" width="20" height="20">
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- Floating Upload Button -->
+    <button
+      class="btn btn-primary upload-btn rounded-circle shadow-lg d-flex align-items-center justify-content-center"
+      (click)="openFileInput()"  [disabled]="loading"
+      title="Upload a file">
+      <img src="assets/icons/file.png" alt="Upload" width="28" height="28" />
+    </button>
+
+    <!-- Hidden File Input -->
+    <input
+      type="file"
+      #fileInput
+      (change)="onFileSelected($event)"
+      style="display: none;"
+      accept="*" />
+</div>

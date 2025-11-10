@@ -1,0 +1,41 @@
+<div class="profile-dropdown bg-white border rounded shadow-sm p-3 mt-2" style="width: 300px;">
+  <h6 class="mb-3 text-primary">Profile</h6>
+
+  <!-- User Info -->
+  <div class="d-flex align-items-center mb-3">
+    <!-- Profile Picture or Initial -->
+    <div class="me-3">
+      <span class="rounded-circle bg-primary text-white d-inline-flex justify-content-center align-items-center"
+            style="width: 40px; height: 40px; font-size: 14px;">
+        {{ getUserInitial() }}
+      </span>
+    </div>
+
+    <div>
+      <div class="fw-semibold">{{ profile?.name || 'No Name available'}}</div>
+      <small class="text-muted">{{ profile?.email || 'No email available'}}</small> 
+    </div>
+  </div>
+
+
+   <!-- Storage Bar - Only show if profile data exists -->
+  <div class="mb-3" *ngIf="profile">
+    <small class="text-muted">Storage Used</small>
+    <div class="progress mt-1" style="height: 6px;">
+      <div class="progress-bar bg-success" [style.width]="getStoragePercent() + '%'"></div>
+    </div>
+    <small class="text-muted">
+      {{ profile.formattedUsed || '0 GB' }} of {{ profile.formattedQuota || '0 GB' }}
+    </small>
+  </div>
+
+  <!-- Show message if no profile data -->
+  <div *ngIf="!profile" class="alert alert-warning mb-3"> 
+    <small>Profile data not available</small>
+  </div>
+
+  <!-- Edit Button -->
+  <button class="btn btn-outline-primary btn-sm w-100" (click)="onEdit()">
+    Edit Profile
+  </button>
+</div>

@@ -1,0 +1,38 @@
+# ASP.NET Core
+bin/
+obj/
+appsettings.json
+appsettings.Development.json
+appsettings.Production.json
+secrets.json
+*.user
+*.suo
+*.sqlproj.user
+*.swp
+.DS_Store
+
+# Angular
+node_modules/
+dist/
+.angular/
+coverage/
+*.log
+npm-debug.log*
+yarn-error.log*
+yarn-debug.log*
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*~
+Thumbs.db
+
+# Environment variables (if any)
+.env
+.env.local
+
+# Build outputs
+debug/
+release/
+publish/

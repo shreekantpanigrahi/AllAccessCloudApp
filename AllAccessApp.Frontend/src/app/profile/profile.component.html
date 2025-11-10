@@ -1,0 +1,158 @@
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8 col-lg-6">
+      <div class="card shadow-sm border-0 rounded-4">
+        <div class="card-body p-4 p-md-5">
+          
+          <!-- Profile Header with Initial -->
+          <div class="text-center mb-5">
+            <div class="position-relative d-inline-block">
+              <!-- User Initial Display -->
+              <div class="rounded-circle bg-primary text-white d-inline-flex justify-content-center align-items-center border"
+                   style="width: 120px; height: 120px; font-size: 48px; border: 3px solid #e9ecef !important;">
+                {{ getUserInitial() }}
+              </div>
+              
+              <!-- Disabled Edit Picture Button -->
+              <button class="btn btn-secondary btn-sm position-absolute bottom-0 end-0 rounded-circle p-2 shadow-sm"
+                     style="width: 36px; height: 36px;"
+                     disabled
+                     title="Profile picture upload under development">
+                <i class="bi bi-camera-fill"></i>
+              </button>
+            </div>
+
+            <!-- Under Development Message -->
+            <div class="mt-3">
+              <small class="text-muted">Profile picture upload - Under Development</small>
+            </div>
+
+             <!-- Storage Bar - Only show if profile data exists -->
+            <div class="mb-3" *ngIf="userProfile">
+              <small class="text-muted">Storage Used</small>
+              <div class="progress mt-1" style="height: 6px;">
+                <div class="progress-bar bg-success" [style.width]="getStoragePercent() + '%'"></div>
+              </div>
+              <small class="text-muted">
+                {{ userProfile.formattedUsed || '0 GB' }} of {{ userProfile.formattedQuota || '0 GB' }}
+              </small>
+            </div>
+          </div>
+
+          <!-- Profile Information Display -->
+          <div class="profile-info mb-4">
+            <!-- Name Field -->
+            <div class="d-flex align-items-center justify-content-between mb-3 p-3 bg-light rounded-3">
+              <div class="flex-grow-1">
+                <small class="text-muted d-block">Name</small>
+                <div class="fw-semibold fs-5">{{ userProfile?.name || 'Not set' }}</div>
+              </div>
+              <button class="btn btn-outline-secondary btn-sm ms-3" 
+                      (click)="toggleEditField('name')"
+                      style="min-width: 40px;">
+                <img src="assets/icons/edit.png" width="20" height="20" title="Edit"/>
+              </button>
+            </div>
+
+            <!-- Email Field -->
+            <div class="d-flex align-items-center justify-content-between p-3 bg-light rounded-3">
+              <div class="flex-grow-1">
+                <small class="text-muted d-block">Email</small>
+                <div class="fw-semibold fs-6">{{ userProfile?.email || 'Not set' }}</div>
+              </div>
+              <button class="btn btn-outline-secondary btn-sm ms-3" 
+                      (click)="toggleEditField('email')"
+                      style="min-width: 40px;">
+                <img src="assets/icons/edit.png" width="20" height="20" title="Edit"/>
+              </button>
+            </div>
+          </div>
+
+          <!-- Edit Forms (Hidden by default) -->
+          <!-- Name Edit Form -->
+          <form *ngIf="editingField === 'name'" [formGroup]="profileForm" (ngSubmit)="onSave()" class="mb-4 p-3 border rounded-3 bg-white">
+            <div class="mb-3">
+              <label class="form-label fw-semibold">Full Name</label>
+              <input type="text" class="form-control" formControlName="name" placeholder="Enter your full name">
+            </div>
+            <div class="d-flex gap-2">
+              <button type="submit" class="btn btn-primary btn-sm" [disabled]="!profileForm.get('name')?.valid || saving">
+                <span *ngIf="saving" class="spinner-border spinner-border-sm me-2"></span>
+                {{ saving ? 'Saving...' : 'Save' }}
+              </button>
+              <button type="button" class="btn btn-outline-secondary btn-sm" (click)="cancelEdit()">Cancel</button>
+            </div>
+          </form>
+
+          <!-- Email Edit Form -->
+          <form *ngIf="editingField === 'email'" [formGroup]="profileForm" (ngSubmit)="onSave()" class="mb-4 p-3 border rounded-3 bg-white">
+            <div class="mb-3">
+              <label class="form-label fw-semibold">Email Address</label>
+              <input type="email" class="form-control" formControlName="email" placeholder="Enter your email">
+            </div>
+            <div class="d-flex gap-2">
+              <button type="submit" class="btn btn-primary btn-sm" [disabled]="!profileForm.get('email')?.valid || saving">
+                <span *ngIf="saving" class="spinner-border spinner-border-sm me-2"></span>
+                {{ saving ? 'Saving...' : 'Save' }}
+              </button>
+              <button type="button" class="btn btn-outline-secondary btn-sm" (click)="cancelEdit()">Cancel</button>
+            </div>
+          </form>
+
+          <!-- Change Password Section -->
+          <div class="mb-4">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <h5 class="mb-0">Change Password</h5>
+              <button class="btn btn-outline-primary btn-sm" 
+                      (click)="togglePasswordSection()">
+                {{ showPasswordSection ? 'Hide' : 'Change Password' }}
+              </button>
+            </div>
+
+            <!-- Password Form (Hidden by default) -->
+            <form *ngIf="showPasswordSection" [formGroup]="passwordForm" (ngSubmit)="onChangePassword()" class="p-3 border rounded-3 bg-light">
+              <div class="mb-3">
+                <label class="form-label">Current Password</label>
+                <input type="password" class="form-control" formControlName="currentPassword" placeholder="Enter current password">
+              </div>
+              <div class="mb-3">
+                <label class="form-label">New Password</label>
+                <input type="password" class="form-control" formControlName="newPassword" placeholder="Enter new password">
+                <small class="text-muted">Password must be at least 6 characters long</small>
+              </div>
+              <button type="submit" class="btn btn-primary" [disabled]="passwordForm.invalid || changingPassword">
+                <span *ngIf="changingPassword" class="spinner-border spinner-border-sm me-2"></span>
+                {{ changingPassword ? 'Updating...' : 'Update Password' }}
+              </button>
+            </form>
+          </div>
+
+          <!-- Logout Section -->
+          <div class="border-top pt-4">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <h6 class="mb-0 text-muted">Account</h6>
+              <button class="btn btn-outline-danger btn-sm" 
+                      (click)="toggleLogoutSection()">
+                {{ showLogoutSection ? 'Cancel' : 'Logout' }}
+              </button>
+            </div>
+
+            <!-- Logout Confirmation (Hidden by default) -->
+            <div *ngIf="showLogoutSection" class="p-3 border border-danger rounded-3 bg-light">
+              <p class="text-danger mb-3">Are you sure you want to logout?</p>
+              <div class="d-flex gap-2">
+                <button class="btn btn-danger" (click)="logout()">
+                  Yes, Logout
+                </button>
+                <button class="btn btn-outline-secondary" (click)="toggleLogoutSection()">
+                  Cancel
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

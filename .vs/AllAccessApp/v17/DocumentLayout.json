@@ -1,0 +1,491 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{786FF1A0-EE9C-4E6A-BC2C-C4E2B5A1DDF4}|AllAccessApp.API\\AllAccessApp.API.csproj|c:\\users\\user\\documents\\dotnet\\allaccessapp\\allaccessapp.api\\appsettings.example.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{786FF1A0-EE9C-4E6A-BC2C-C4E2B5A1DDF4}|AllAccessApp.API\\AllAccessApp.API.csproj|solutionrelative:allaccessapp.api\\appsettings.example.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{786FF1A0-EE9C-4E6A-BC2C-C4E2B5A1DDF4}|AllAccessApp.API\\AllAccessApp.API.csproj|c:\\users\\user\\documents\\dotnet\\allaccessapp\\allaccessapp.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{786FF1A0-EE9C-4E6A-BC2C-C4E2B5A1DDF4}|AllAccessApp.API\\AllAccessApp.API.csproj|solutionrelative:allaccessapp.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EABD417C-9F02-49C7-84DC-96AA75E67D7F}|AllAccessApp.Infrastructure\\AllAccessApp.Infrastructure.csproj|c:\\users\\user\\documents\\dotnet\\allaccessapp\\allaccessapp.infrastructure\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EABD417C-9F02-49C7-84DC-96AA75E67D7F}|AllAccessApp.Infrastructure\\AllAccessApp.Infrastructure.csproj|solutionrelative:allaccessapp.infrastructure\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{786FF1A0-EE9C-4E6A-BC2C-C4E2B5A1DDF4}|AllAccessApp.API\\AllAccessApp.API.csproj|c:\\users\\user\\documents\\dotnet\\allaccessapp\\allaccessapp.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{786FF1A0-EE9C-4E6A-BC2C-C4E2B5A1DDF4}|AllAccessApp.API\\AllAccessApp.API.csproj|solutionrelative:allaccessapp.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EABD417C-9F02-49C7-84DC-96AA75E67D7F}|AllAccessApp.Infrastructure\\AllAccessApp.Infrastructure.csproj|c:\\users\\user\\documents\\dotnet\\allaccessapp\\allaccessapp.infrastructure\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EABD417C-9F02-49C7-84DC-96AA75E67D7F}|AllAccessApp.Infrastructure\\AllAccessApp.Infrastructure.csproj|solutionrelative:allaccessapp.infrastructure\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC9EDFE5-281D-4CAF-B4EA-ABCF20A73176}|AllAccessApp.Application\\AllAccessApp.Application.csproj|c:\\users\\user\\documents\\dotnet\\allaccessapp\\allaccessapp.application\\services\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC9EDFE5-281D-4CAF-B4EA-ABCF20A73176}|AllAccessApp.Application\\AllAccessApp.Application.csproj|solutionrelative:allaccessapp.application\\services\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC9EDFE5-281D-4CAF-B4EA-ABCF20A73176}|AllAccessApp.Application\\AllAccessApp.Application.csproj|c:\\users\\user\\documents\\dotnet\\allaccessapp\\allaccessapp.application\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC9EDFE5-281D-4CAF-B4EA-ABCF20A73176}|AllAccessApp.Application\\AllAccessApp.Application.csproj|solutionrelative:allaccessapp.application\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC9EDFE5-281D-4CAF-B4EA-ABCF20A73176}|AllAccessApp.Application\\AllAccessApp.Application.csproj|c:\\users\\user\\documents\\dotnet\\allaccessapp\\allaccessapp.application\\dtos\\resetpasswordmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC9EDFE5-281D-4CAF-B4EA-ABCF20A73176}|AllAccessApp.Application\\AllAccessApp.Application.csproj|solutionrelative:allaccessapp.application\\dtos\\resetpasswordmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC9EDFE5-281D-4CAF-B4EA-ABCF20A73176}|AllAccessApp.Application\\AllAccessApp.Application.csproj|c:\\users\\user\\documents\\dotnet\\allaccessapp\\allaccessapp.application\\dtos\\verifyotpmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC9EDFE5-281D-4CAF-B4EA-ABCF20A73176}|AllAccessApp.Application\\AllAccessApp.Application.csproj|solutionrelative:allaccessapp.application\\dtos\\verifyotpmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC9EDFE5-281D-4CAF-B4EA-ABCF20A73176}|AllAccessApp.Application\\AllAccessApp.Application.csproj|c:\\users\\user\\documents\\dotnet\\allaccessapp\\allaccessapp.application\\dtos\\forgotpasswordmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC9EDFE5-281D-4CAF-B4EA-ABCF20A73176}|AllAccessApp.Application\\AllAccessApp.Application.csproj|solutionrelative:allaccessapp.application\\dtos\\forgotpasswordmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6466172-53A7-4747-BC9B-A24DD64E62D1}|AllAccessApp.Domain\\AllAccessApp.Domain.csproj|c:\\users\\user\\documents\\dotnet\\allaccessapp\\allaccessapp.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6466172-53A7-4747-BC9B-A24DD64E62D1}|AllAccessApp.Domain\\AllAccessApp.Domain.csproj|solutionrelative:allaccessapp.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EABD417C-9F02-49C7-84DC-96AA75E67D7F}|AllAccessApp.Infrastructure\\AllAccessApp.Infrastructure.csproj|c:\\users\\user\\documents\\dotnet\\allaccessapp\\allaccessapp.infrastructure\\services\\profileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EABD417C-9F02-49C7-84DC-96AA75E67D7F}|AllAccessApp.Infrastructure\\AllAccessApp.Infrastructure.csproj|solutionrelative:allaccessapp.infrastructure\\services\\profileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{786FF1A0-EE9C-4E6A-BC2C-C4E2B5A1DDF4}|AllAccessApp.API\\AllAccessApp.API.csproj|c:\\users\\user\\documents\\dotnet\\allaccessapp\\allaccessapp.api\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{786FF1A0-EE9C-4E6A-BC2C-C4E2B5A1DDF4}|AllAccessApp.API\\AllAccessApp.API.csproj|solutionrelative:allaccessapp.api\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{786FF1A0-EE9C-4E6A-BC2C-C4E2B5A1DDF4}|AllAccessApp.API\\AllAccessApp.API.csproj|c:\\users\\user\\documents\\dotnet\\allaccessapp\\allaccessapp.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{786FF1A0-EE9C-4E6A-BC2C-C4E2B5A1DDF4}|AllAccessApp.API\\AllAccessApp.API.csproj|solutionrelative:allaccessapp.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EABD417C-9F02-49C7-84DC-96AA75E67D7F}|AllAccessApp.Infrastructure\\AllAccessApp.Infrastructure.csproj|c:\\users\\user\\documents\\dotnet\\allaccessapp\\allaccessapp.infrastructure\\services\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EABD417C-9F02-49C7-84DC-96AA75E67D7F}|AllAccessApp.Infrastructure\\AllAccessApp.Infrastructure.csproj|solutionrelative:allaccessapp.infrastructure\\services\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC9EDFE5-281D-4CAF-B4EA-ABCF20A73176}|AllAccessApp.Application\\AllAccessApp.Application.csproj|c:\\users\\user\\documents\\dotnet\\allaccessapp\\allaccessapp.application\\services\\iprofileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC9EDFE5-281D-4CAF-B4EA-ABCF20A73176}|AllAccessApp.Application\\AllAccessApp.Application.csproj|solutionrelative:allaccessapp.application\\services\\iprofileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6466172-53A7-4747-BC9B-A24DD64E62D1}|AllAccessApp.Domain\\AllAccessApp.Domain.csproj|c:\\users\\user\\documents\\dotnet\\allaccessapp\\allaccessapp.domain\\entities\\changepasswordmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6466172-53A7-4747-BC9B-A24DD64E62D1}|AllAccessApp.Domain\\AllAccessApp.Domain.csproj|solutionrelative:allaccessapp.domain\\entities\\changepasswordmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6466172-53A7-4747-BC9B-A24DD64E62D1}|AllAccessApp.Domain\\AllAccessApp.Domain.csproj|c:\\users\\user\\documents\\dotnet\\allaccessapp\\allaccessapp.domain\\entities\\updateprofilemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6466172-53A7-4747-BC9B-A24DD64E62D1}|AllAccessApp.Domain\\AllAccessApp.Domain.csproj|solutionrelative:allaccessapp.domain\\entities\\updateprofilemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC9EDFE5-281D-4CAF-B4EA-ABCF20A73176}|AllAccessApp.Application\\AllAccessApp.Application.csproj|c:\\users\\user\\documents\\dotnet\\allaccessapp\\allaccessapp.application\\dtos\\userprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC9EDFE5-281D-4CAF-B4EA-ABCF20A73176}|AllAccessApp.Application\\AllAccessApp.Application.csproj|solutionrelative:allaccessapp.application\\dtos\\userprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{786FF1A0-EE9C-4E6A-BC2C-C4E2B5A1DDF4}|AllAccessApp.API\\AllAccessApp.API.csproj|c:\\users\\user\\documents\\dotnet\\allaccessapp\\allaccessapp.api\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{786FF1A0-EE9C-4E6A-BC2C-C4E2B5A1DDF4}|AllAccessApp.API\\AllAccessApp.API.csproj|solutionrelative:allaccessapp.api\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6466172-53A7-4747-BC9B-A24DD64E62D1}|AllAccessApp.Domain\\AllAccessApp.Domain.csproj|c:\\users\\user\\documents\\dotnet\\allaccessapp\\allaccessapp.domain\\entities\\contactformmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6466172-53A7-4747-BC9B-A24DD64E62D1}|AllAccessApp.Domain\\AllAccessApp.Domain.csproj|solutionrelative:allaccessapp.domain\\entities\\contactformmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{786FF1A0-EE9C-4E6A-BC2C-C4E2B5A1DDF4}|AllAccessApp.API\\AllAccessApp.API.csproj|c:\\users\\user\\documents\\dotnet\\allaccessapp\\allaccessapp.api\\controllers\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{786FF1A0-EE9C-4E6A-BC2C-C4E2B5A1DDF4}|AllAccessApp.API\\AllAccessApp.API.csproj|solutionrelative:allaccessapp.api\\controllers\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC9EDFE5-281D-4CAF-B4EA-ABCF20A73176}|AllAccessApp.Application\\AllAccessApp.Application.csproj|c:\\users\\user\\documents\\dotnet\\allaccessapp\\allaccessapp.application\\dtos\\fileitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC9EDFE5-281D-4CAF-B4EA-ABCF20A73176}|AllAccessApp.Application\\AllAccessApp.Application.csproj|solutionrelative:allaccessapp.application\\dtos\\fileitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC9EDFE5-281D-4CAF-B4EA-ABCF20A73176}|AllAccessApp.Application\\AllAccessApp.Application.csproj|c:\\users\\user\\documents\\dotnet\\allaccessapp\\allaccessapp.application\\dtos\\fileuploadresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC9EDFE5-281D-4CAF-B4EA-ABCF20A73176}|AllAccessApp.Application\\AllAccessApp.Application.csproj|solutionrelative:allaccessapp.application\\dtos\\fileuploadresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC9EDFE5-281D-4CAF-B4EA-ABCF20A73176}|AllAccessApp.Application\\AllAccessApp.Application.csproj|c:\\users\\user\\documents\\dotnet\\allaccessapp\\allaccessapp.application\\dtos\\fileuploaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC9EDFE5-281D-4CAF-B4EA-ABCF20A73176}|AllAccessApp.Application\\AllAccessApp.Application.csproj|solutionrelative:allaccessapp.application\\dtos\\fileuploaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC9EDFE5-281D-4CAF-B4EA-ABCF20A73176}|AllAccessApp.Application\\AllAccessApp.Application.csproj|c:\\users\\user\\documents\\dotnet\\allaccessapp\\allaccessapp.application\\dtos\\filelistresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC9EDFE5-281D-4CAF-B4EA-ABCF20A73176}|AllAccessApp.Application\\AllAccessApp.Application.csproj|solutionrelative:allaccessapp.application\\dtos\\filelistresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC9EDFE5-281D-4CAF-B4EA-ABCF20A73176}|AllAccessApp.Application\\AllAccessApp.Application.csproj|c:\\users\\user\\documents\\dotnet\\allaccessapp\\allaccessapp.application\\dtos\\filedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC9EDFE5-281D-4CAF-B4EA-ABCF20A73176}|AllAccessApp.Application\\AllAccessApp.Application.csproj|solutionrelative:allaccessapp.application\\dtos\\filedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC9EDFE5-281D-4CAF-B4EA-ABCF20A73176}|AllAccessApp.Application\\AllAccessApp.Application.csproj|c:\\users\\user\\documents\\dotnet\\allaccessapp\\allaccessapp.application\\dtos\\filedownloadresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC9EDFE5-281D-4CAF-B4EA-ABCF20A73176}|AllAccessApp.Application\\AllAccessApp.Application.csproj|solutionrelative:allaccessapp.application\\dtos\\filedownloadresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC9EDFE5-281D-4CAF-B4EA-ABCF20A73176}|AllAccessApp.Application\\AllAccessApp.Application.csproj|c:\\users\\user\\documents\\dotnet\\allaccessapp\\allaccessapp.application\\dtos\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC9EDFE5-281D-4CAF-B4EA-ABCF20A73176}|AllAccessApp.Application\\AllAccessApp.Application.csproj|solutionrelative:allaccessapp.application\\dtos\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.example.json",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.API\\appsettings.example.json",
+              "RelativeDocumentMoniker": "AllAccessApp.API\\appsettings.example.json",
+              "ToolTip": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.API\\appsettings.example.json",
+              "RelativeToolTip": "AllAccessApp.API\\appsettings.example.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-10T11:09:39.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.Infrastructure\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "AllAccessApp.Infrastructure\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.Infrastructure\\Services\\AuthService.cs",
+              "RelativeToolTip": "AllAccessApp.Infrastructure\\Services\\AuthService.cs",
+              "ViewState": "AgIAAKEAAAAAAAAAAAAiwHoAAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T06:03:50.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ResetPasswordModel.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.Application\\DTOs\\ResetPasswordModel.cs",
+              "RelativeDocumentMoniker": "AllAccessApp.Application\\DTOs\\ResetPasswordModel.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.Application\\DTOs\\ResetPasswordModel.cs",
+              "RelativeToolTip": "AllAccessApp.Application\\DTOs\\ResetPasswordModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T05:12:03.799Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "VerifyOtpModel.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.Application\\DTOs\\VerifyOtpModel.cs",
+              "RelativeDocumentMoniker": "AllAccessApp.Application\\DTOs\\VerifyOtpModel.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.Application\\DTOs\\VerifyOtpModel.cs",
+              "RelativeToolTip": "AllAccessApp.Application\\DTOs\\VerifyOtpModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T05:09:29.964Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.Application\\Services\\IAuthService.cs",
+              "RelativeDocumentMoniker": "AllAccessApp.Application\\Services\\IAuthService.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.Application\\Services\\IAuthService.cs",
+              "RelativeToolTip": "AllAccessApp.Application\\Services\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T05:07:11.258Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.API\\appsettings.json",
+              "RelativeDocumentMoniker": "AllAccessApp.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.API\\appsettings.json",
+              "RelativeToolTip": "AllAccessApp.API\\appsettings.json",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-29T07:54:52.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "AllAccessApp.API\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "AllAccessApp.API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwAkAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T07:08:57.159Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.Infrastructure\\Services\\EmailService.cs",
+              "RelativeDocumentMoniker": "AllAccessApp.Infrastructure\\Services\\EmailService.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.Infrastructure\\Services\\EmailService.cs",
+              "RelativeToolTip": "AllAccessApp.Infrastructure\\Services\\EmailService.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAowFMAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T09:41:56.877Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IEmailService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.Application\\Services\\IEmailService.cs",
+              "RelativeDocumentMoniker": "AllAccessApp.Application\\Services\\IEmailService.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.Application\\Services\\IEmailService.cs",
+              "RelativeToolTip": "AllAccessApp.Application\\Services\\IEmailService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T09:40:03.515Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ForgotPasswordModel.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.Application\\DTOs\\ForgotPasswordModel.cs",
+              "RelativeDocumentMoniker": "AllAccessApp.Application\\DTOs\\ForgotPasswordModel.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.Application\\DTOs\\ForgotPasswordModel.cs",
+              "RelativeToolTip": "AllAccessApp.Application\\DTOs\\ForgotPasswordModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T05:07:57.463Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProfileService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.Infrastructure\\Services\\ProfileService.cs",
+              "RelativeDocumentMoniker": "AllAccessApp.Infrastructure\\Services\\ProfileService.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.Infrastructure\\Services\\ProfileService.cs",
+              "RelativeToolTip": "AllAccessApp.Infrastructure\\Services\\ProfileService.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowAgAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T11:38:22.824Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IProfileService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.Application\\Services\\IProfileService.cs",
+              "RelativeDocumentMoniker": "AllAccessApp.Application\\Services\\IProfileService.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.Application\\Services\\IProfileService.cs",
+              "RelativeToolTip": "AllAccessApp.Application\\Services\\IProfileService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T11:31:38.564Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ChangePasswordModel.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.Domain\\Entities\\ChangePasswordModel.cs",
+              "RelativeDocumentMoniker": "AllAccessApp.Domain\\Entities\\ChangePasswordModel.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.Domain\\Entities\\ChangePasswordModel.cs",
+              "RelativeToolTip": "AllAccessApp.Domain\\Entities\\ChangePasswordModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T11:25:13.467Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.API\\Program.cs",
+              "RelativeDocumentMoniker": "AllAccessApp.API\\Program.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.API\\Program.cs",
+              "RelativeToolTip": "AllAccessApp.API\\Program.cs",
+              "ViewState": "AgIAAFUAAAAAZmZmZmYiwFIAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T12:13:08.552Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "FileService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.Infrastructure\\Services\\FileService.cs",
+              "RelativeDocumentMoniker": "AllAccessApp.Infrastructure\\Services\\FileService.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.Infrastructure\\Services\\FileService.cs",
+              "RelativeToolTip": "AllAccessApp.Infrastructure\\Services\\FileService.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAQwNIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T07:57:03.701Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.Domain\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "AllAccessApp.Domain\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.Domain\\Entities\\User.cs",
+              "RelativeToolTip": "AllAccessApp.Domain\\Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T10:33:41.021Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ProfileController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.API\\Controllers\\ProfileController.cs",
+              "RelativeDocumentMoniker": "AllAccessApp.API\\Controllers\\ProfileController.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.API\\Controllers\\ProfileController.cs",
+              "RelativeToolTip": "AllAccessApp.API\\Controllers\\ProfileController.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAIwDQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T08:09:55.825Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UpdateProfileModel.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.Domain\\Entities\\UpdateProfileModel.cs",
+              "RelativeDocumentMoniker": "AllAccessApp.Domain\\Entities\\UpdateProfileModel.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.Domain\\Entities\\UpdateProfileModel.cs",
+              "RelativeToolTip": "AllAccessApp.Domain\\Entities\\UpdateProfileModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T11:23:55.615Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "UserProfileDto.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.Application\\DTOs\\UserProfileDto.cs",
+              "RelativeDocumentMoniker": "AllAccessApp.Application\\DTOs\\UserProfileDto.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.Application\\DTOs\\UserProfileDto.cs",
+              "RelativeToolTip": "AllAccessApp.Application\\DTOs\\UserProfileDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T10:36:41.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ContactController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.API\\Controllers\\ContactController.cs",
+              "RelativeDocumentMoniker": "AllAccessApp.API\\Controllers\\ContactController.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.API\\Controllers\\ContactController.cs",
+              "RelativeToolTip": "AllAccessApp.API\\Controllers\\ContactController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T10:00:56.848Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "FileDTO.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.Application\\DTOs\\FileDTO.cs",
+              "RelativeDocumentMoniker": "AllAccessApp.Application\\DTOs\\FileDTO.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.Application\\DTOs\\FileDTO.cs",
+              "RelativeToolTip": "AllAccessApp.Application\\DTOs\\FileDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T10:10:01.109Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "FileDownloadResponse.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.Application\\DTOs\\FileDownloadResponse.cs",
+              "RelativeDocumentMoniker": "AllAccessApp.Application\\DTOs\\FileDownloadResponse.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.Application\\DTOs\\FileDownloadResponse.cs",
+              "RelativeToolTip": "AllAccessApp.Application\\DTOs\\FileDownloadResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T10:09:41.239Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ContactFormModel.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.Domain\\Entities\\ContactFormModel.cs",
+              "RelativeDocumentMoniker": "AllAccessApp.Domain\\Entities\\ContactFormModel.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.Domain\\Entities\\ContactFormModel.cs",
+              "RelativeToolTip": "AllAccessApp.Domain\\Entities\\ContactFormModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T10:08:34.183Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "FileListResponse.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.Application\\DTOs\\FileListResponse.cs",
+              "RelativeDocumentMoniker": "AllAccessApp.Application\\DTOs\\FileListResponse.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.Application\\DTOs\\FileListResponse.cs",
+              "RelativeToolTip": "AllAccessApp.Application\\DTOs\\FileListResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T10:05:53.298Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "FileUploadResponse.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.Application\\DTOs\\FileUploadResponse.cs",
+              "RelativeDocumentMoniker": "AllAccessApp.Application\\DTOs\\FileUploadResponse.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.Application\\DTOs\\FileUploadResponse.cs",
+              "RelativeToolTip": "AllAccessApp.Application\\DTOs\\FileUploadResponse.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwBQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T15:24:16.315Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "FileUploadDto.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.Application\\DTOs\\FileUploadDto.cs",
+              "RelativeDocumentMoniker": "AllAccessApp.Application\\DTOs\\FileUploadDto.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.Application\\DTOs\\FileUploadDto.cs",
+              "RelativeToolTip": "AllAccessApp.Application\\DTOs\\FileUploadDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T15:13:32.247Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "FileController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.API\\Controllers\\FileController.cs",
+              "RelativeDocumentMoniker": "AllAccessApp.API\\Controllers\\FileController.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.API\\Controllers\\FileController.cs",
+              "RelativeToolTip": "AllAccessApp.API\\Controllers\\FileController.cs",
+              "ViewState": "AgIAAGwAAADAYWZmZmYfwHIAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T13:52:38.498Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "FileItemDto.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.Application\\DTOs\\FileItemDto.cs",
+              "RelativeDocumentMoniker": "AllAccessApp.Application\\DTOs\\FileItemDto.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.Application\\DTOs\\FileItemDto.cs",
+              "RelativeToolTip": "AllAccessApp.Application\\DTOs\\FileItemDto.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBJwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T10:06:19.606Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "LoginModel.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.Application\\DTOs\\LoginModel.cs",
+              "RelativeDocumentMoniker": "AllAccessApp.Application\\DTOs\\LoginModel.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Dotnet\\AllAccessApp\\AllAccessApp.Application\\DTOs\\LoginModel.cs",
+              "RelativeToolTip": "AllAccessApp.Application\\DTOs\\LoginModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T10:50:12.67Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

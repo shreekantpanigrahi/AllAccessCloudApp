@@ -1,0 +1,126 @@
+<div class="contact-container py-5" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-10 text-center">
+        <h2 class="display-6 fw-bold text-dark">Get In Touch With Us</h2>
+        <p class="lead text-muted">
+          Have questions, feedback, or need support? Fill out the form or reach us directly.
+        </p>
+      </div>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+      <!-- Left Side: Contact Info -->
+      <div class="col-md-5">
+        <div class="info-card p-4 bg-white rounded-4 shadow-sm h-100 border-0">
+          <h4 class="mb-4 text-primary fw-semibold">Contact Information</h4>
+
+          <div class="d-flex align-items-start mb-4">
+            <i class="bi bi-envelope-fill text-primary me-3 mt-1" style="font-size: 1.2rem;"></i>
+            <div>
+              <h6 class="mb-0">Email</h6>
+              <small class="text-muted">support&#64;allaccessapp.com</small>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-start mb-4">
+            <i class="bi bi-geo-alt-fill text-primary me-3 mt-1" style="font-size: 1.2rem;"></i>
+            <div>
+              <h6 class="mb-0">Location</h6>
+              <small class="text-muted">Mumbai, IND</small>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-start mb-4">
+            <i class="bi bi-clock-fill text-primary me-3 mt-1" style="font-size: 1.2rem;"></i>
+            <div>
+              <h6 class="mb-0">Support Hours</h6>
+              <small class="text-muted">Mon-Fri, 10AM - 7PM (IST)</small>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-start">
+            <i class="bi bi-question-circle-fill text-primary me-3 mt-1" style="font-size: 1.2rem;"></i>
+            <div>
+              <h6 class="mb-0">Frequently Asked Questions</h6>
+              <small class="text-muted">
+                <a href="#" class="text-decoration-none">Visit our Help Center</a>
+              </small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Side: Contact Form -->
+      <div class="col-md-7">
+        <div class="form-card p-5 bg-white rounded-4 shadow-sm border-0">
+          <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" novalidate>
+            <!-- Name -->
+            <div class="mb-3">
+              <label for="name" class="form-label small fw-bold text-dark">Full Name</label>
+              <input type="text"
+                     class="form-control form-control-lg"
+                     id="name"
+                     formControlName="name"
+                     placeholder="Enter your full name"
+                     [class.is-invalid]="name.invalid && name.touched">
+              <div *ngIf="name.invalid && name.touched" class="invalid-feedback">
+                Name is required.
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="mb-3">
+              <label for="email" class="form-label small fw-bold text-dark">Email Address</label>
+              <input type="email"
+                     class="form-control form-control-lg"
+                     id="email"
+                     formControlName="email"
+                     placeholder="Enter your email"
+                     [class.is-invalid]="email.invalid && email.touched">
+              <div *ngIf="email.invalid && email.touched" class="invalid-feedback">
+                A valid email is required.
+              </div>
+            </div>
+
+            <!-- Message -->
+            <div class="mb-4">
+              <label for="message" class="form-label small fw-bold text-dark">Your Message</label>
+              <textarea class="form-control"
+                        id="message"
+                        rows="5"
+                        formControlName="message"
+                        placeholder="Tell us how we can help..."
+                        [class.is-invalid]="message.invalid && message.touched"></textarea>
+              <div *ngIf="message.invalid && message.touched" class="invalid-feedback">
+                Please enter your message.
+              </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="d-grid">
+              <button type="submit"
+                      class="btn btn-primary btn-lg py-2"
+                      [disabled]="loading || contactForm.invalid">
+                <span *ngIf="loading" class="spinner-border spinner-border-sm me-2"></span>
+                {{ loading ? 'Sending...' : 'Send Message' }}
+              </button>
+            </div>
+
+            <!-- Success Message -->
+            <div *ngIf="success" class="alert alert-success mt-4 small p-3 d-flex align-items-center fade show">
+              <i class="bi bi-check-circle-fill me-2"></i>
+              Thank you! We'll get back to you within 24 hours.
+            </div>
+
+            <!-- Error Message -->
+            <div *ngIf="error" class="alert alert-danger mt-4 small p-3 d-flex align-items-center fade show">
+              <i class="bi bi-exclamation-triangle-fill me-2"></i>
+              {{ error }}
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
