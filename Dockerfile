@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y curl && \
     curl -fsSL https://deb.nodesource.com/setup_20.x | bash - && \
     apt-get install -y nodejs
 
-# Copy everything into container
+# Copy everything into the container
 COPY . .
 
 # Restore and build .NET backend
