@@ -99,7 +99,11 @@ builder.Services.Configure<Microsoft.AspNetCore.Http.Features.FormOptions>(optio
 
 // Add JWT Authentication
 var jwtSettings = builder.Configuration.GetSection("Jwt");
-var key = Encoding.ASCII.GetBytes(jwtSettings["Key"]);
+var keyString = jwtSettings["Key"];
+if (string.IsNullOrEmpty(keyString))
+    throw new InvalidOperationException("JWT Key not configured. Check appsettings.json or environment variables.");
+
+var key = Encoding.ASCII.GetBytes(keyString);
 
 builder.Services.AddCors(options =>
 {
