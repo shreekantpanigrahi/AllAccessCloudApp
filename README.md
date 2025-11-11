@@ -31,3 +31,11 @@ cd AllAccessApp.API
 dotnet restore
 dotnet ef database update
 dotnet run
+```
+
+### Frontend
+```bash
+cd AllAccessApp.Frontend
+npm install
+ng serve
+```
