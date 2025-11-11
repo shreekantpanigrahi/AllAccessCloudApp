@@ -1,6 +1,6 @@
 ﻿# ---- Build stage ----
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
-WORKDIR /src
+WORKDIR /app
 
 # Install Node.js (for Angular build)
 RUN apt-get update && apt-get install -y curl && \
@@ -11,19 +11,18 @@ RUN apt-get update && apt-get install -y curl && \
 COPY . .
 
 # Restore and build .NET backend
-WORKDIR /src/src/AllAccessApp.API
-RUN dotnet restore "AllAccessApp.API.csproj"
-RUN dotnet publish "AllAccessApp.API.csproj" -c Release -o /app/publish
+WORKDIR /app/src/AllAccessApp.API
+RUN dotnet restore
+RUN dotnet publish -c Release -o /out
 
 # Build Angular frontend
-WORKDIR /src/src/AllAccessApp.Frontend
+WORKDIR /app/src/AllAccessApp.Frontend
 RUN npm install
 RUN npm run build -- --configuration production
 
 # ---- Runtime stage ----
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
 WORKDIR /app
-COPY --from=build /app/publish .
-
+COPY --from=build /out .
 EXPOSE 80
 ENTRYPOINT ["dotnet", "AllAccessApp.API.dll"]
