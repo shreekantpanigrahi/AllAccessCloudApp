@@ -11,12 +11,12 @@ RUN apt-get update && apt-get install -y curl && \
 COPY . .
 
 # Restore and build .NET backend
-WORKDIR /app/src/AllAccessApp.API
+WORKDIR /app/AllAccessApp.API
 RUN dotnet restore
 RUN dotnet publish -c Release -o /out
 
 # Build Angular frontend
-WORKDIR /app/src/AllAccessApp.Frontend
+WORKDIR /app/AllAccessApp.Frontend
 RUN npm install
 RUN npm run build -- --configuration production
 
@@ -24,5 +24,6 @@ RUN npm run build -- --configuration production
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
 WORKDIR /app
 COPY --from=build /out .
+
 EXPOSE 80
 ENTRYPOINT ["dotnet", "AllAccessApp.API.dll"]
