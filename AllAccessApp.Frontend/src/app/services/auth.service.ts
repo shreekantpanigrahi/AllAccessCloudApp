@@ -3,13 +3,15 @@ import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable, tap } from 'rxjs';
 import { AuthResponse, LoginModel, RegisterModel } from '../models/auth.model';
 import { ForgotPasswordModel, ResetPasswordModel, VerifyOtpModel } from '../models/forgot-password.model';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 
 export class AuthService {
-  private apiUrl= 'https://localhost:7064/api/Auth';
+
+  private apiUrl= `${environment.apiUrl}/Auth`;
   private currentUserSubject= new BehaviorSubject<any>(null);
 
   constructor(private http: HttpClient) { 
