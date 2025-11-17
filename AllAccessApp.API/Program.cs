@@ -16,10 +16,11 @@ using Microsoft.AspNetCore.Server.IIS;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add logging
-builder.Services.AddLogging(logging =>
-{
-    logging.SetMinimumLevel(LogLevel.Debug);
-});
+// Proper logging setup
+builder.Logging.ClearProviders();          // clear default
+builder.Logging.AddConsole();              // send to Render logs
+builder.Logging.AddDebug();                // for local dev
+builder.Logging.SetMinimumLevel(LogLevel.Debug);
 
 // Configure request size limits for file uploads
 builder.Services.Configure<FormOptions>(options =>
@@ -150,12 +151,18 @@ app.UseExceptionHandler(errorApp =>
         logger.LogError(exception, "Unhandled exception at {Path}", context.Request.Path);
 
         context.Response.StatusCode = StatusCodes.Status500InternalServerError;
-        await context.Response.WriteAsJsonAsync(new
+        context.Response.ContentType = "application/json";
+
+        var isDevelopment = builder.Environment.IsDevelopment();
+
+        var response = new
         {
             error = "Internal Server Error",
-            message = exception?.Message,
-            stackTrace = exception?.StackTrace
-        });
+            message = isDevelopment ? exception?.Message : "An unexpected error occurred.",
+            stackTrace = isDevelopment ? exception?.StackTrace : null
+        };
+
+        await context.Response.WriteAsJsonAsync(response);
     });
 });
 
